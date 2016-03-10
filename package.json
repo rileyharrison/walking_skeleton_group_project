@@ -1,13 +1,13 @@
 {
-  "name": "walking_skeleton",
+  "name": "walking_skeleton_group_project",
   "version": "1.0.0",
-  "description": "my first Mean application",
+  "description": "project management app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "Riley Harrison",
+  "author": "Riley Roman Neil Thomas",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.0",
@@ -19,5 +19,13 @@
     "jquery": "^2.2.1",
     "mongoose": "^4.4.6"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
 }
