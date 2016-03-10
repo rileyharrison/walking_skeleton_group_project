@@ -81,6 +81,11 @@ function listCats(){
         type: "GET",
         url: "/cats",
         // it worked list the cats
+
+
+        /// TODO here I would like to experiment with popping this object into an array
+
+        
         success: function(data){
 
             // loop through the data object. This looks teribble I want a better way
