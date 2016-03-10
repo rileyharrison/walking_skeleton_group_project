@@ -24,6 +24,11 @@
 
 
 $(document).ready(function(){
+
+    //--------------
+    //listcats here test
+    listCats();
+    //-----------
     //on submit, prevent page refresh.
     $("#catForm").on("submit", function(event){
     event.preventDefault();
