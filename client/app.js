@@ -69,7 +69,7 @@ function assignStaff(){
     // while any roles unfilled
 
         // give me one of these employees for these unfilled roles
-
+    while(objSkillBox.length>0){
 
         $.ajax({
             type: "POST",
@@ -81,12 +81,16 @@ function assignStaff(){
                 console.log("Hey we got some data", data.name);
                 }
                 // try and retreive cats
-                listEmps(data)
-
+                listEmps(data);
+                for (var i=0; i>objSkillBox.skills.length; i++){
+                    if(data.skill == objSkillBox.skills[i]){
+                        objSkillBox.skills.splice(i,1);
+                    }
+                }
             }
         });
 
-
+    }
 
 
 
