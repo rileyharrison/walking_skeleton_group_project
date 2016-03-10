@@ -1,11 +1,43 @@
 var express = require("express");
 var router = express.Router();
-var mongoose = require("mongoose");
+// var mongoose = require("mongoose");
 var path = require("path");
 
-mongoose.connect("mongodb://localhost:27017/kappa_cats");
+// var empName = require("../modules/moduleOne.js");
+// var empSkill = require("../modules/moduleTwo.js");
+var emp = require("../modules/moduleThree.js");
 
-var Cat = mongoose.model("Cat", {name:String});
+
+
+
+// mongoose.connect("mongodb://localhost:27017/kappa_cats");
+
+// var Cat = mongoose.model("Cat", {name:String});
+
+router.post("/emps", function(req,res){
+
+
+    console.log("what is our request", req.body.skills);
+
+    //do whatever we want with req.body.skills
+
+    res.send(emp);
+
+    //var kitty = new Cat({name: req.body.catName});
+    //
+    // kitty.save(function(err){
+    //     if(err){
+    //       console.log( "We had an error",err);
+    //     }
+    //     //console.log("we saved a kitt?");
+    //     res.send("something to send back");
+    // });
+});
+
+
+
+
+
 
 router.post("/cats", function(req,res){
     var kitty = new Cat({name: req.body.catName});
